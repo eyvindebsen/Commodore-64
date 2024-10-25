@@ -1,0 +1,108 @@
+Mazegame v4 for Commodore 64.
+A 100% basic game by Eyvind Ebsen.
+Created oct. 2024
+
+
+Overview
+--------
+A commodore c64 basic game of mazes.
+Quickly get our hero to save the beautiful princess,
+before her lifeforce runs out.
+
+
+Features
+--------
+Choose between generating mazes using the CPU,
+which is rather slow, or load one of the
+1.200+ precalculated mazes quickly from disk.
+
+Top 10 highscore. Saves to disk.
+
+Joystick controlled. (port 2)
+
+Colorful graphics.
+
+Endless eons of fun :)
+
+
+Updates
+-------
+v4:
+Got rid of the precalculation.
+Hiscore now saves to disk.
+fixed alot of cosmetic bugs.
+
+v3:
+spending a bunch of memory, 
+draws the maze 5 times faster.
+requires a slow 1-time precalculation :(
+
+
+Fun facts
+---------
+There is 2^958 possible mazes.
+
+A maze can be broken down into 125 bytes.
+5 byte for a line, times 25 of those.
+
+The first data file of mazes was a SEQ file.
+Imagine the time it would take to seek to the last maze.
+So made a converter that would read the SEQ from device 8,
+saving as a REL file on device 9. Took a while.
+
+The data is now in a REL file for quick access,
+thanks to Jim Butterfield for this article:
+https://www.atarimagazines.com/compute/issue40/relative_files.php
+
+
+Thanks
+------
+Huge thanks to the user HNE74 for the original maze code
+https://github.com/HNE74/cbmprogs/tree/master/Mazegen
+
+Big thanks to Robin from the youtube channel
+"8-Bit Show And Tell" for great tips and tricks
+on optimizing basic. (which this game lacks)
+https://www.youtube.com/@8_Bit
+
+Thanks to the 8 bit guy for many great hours of
+commodore 64 quirks and information.
+
+Thanks to GRay Defender for tips and tricks
+https://www.youtube.com/@GRayDefender
+
+Great thanks to the developers of CBM prg studio
+https://www.ajordison.co.uk/
+
+The c64 Vice emulator, thanks!
+https://vice-emu.sourceforge.io/
+
+
+Possible errors
+---------------
+Some emulators dont work properly with REL files.
+Tested and works with Vice (GTK) and emulation of
+disk drive 1541-II.
+
+
+Todo
+----
+Speed up the maze drawing routine... done!
+Make it possible to save hiscore to disk...done!
+
+
+References
+----------
+https://rosettacode.org/wiki/Maze_generation#Commodore_BASIC
+https://en.wikipedia.org/wiki/Maze_generation_algorithm
+https://www.lemon64.com/
+https://csdb.dk/
+https://www.atarimagazines.com/compute/
+https://codebase64.org/
+https://skoolkid.github.io/sk6502/c64rom/index.html
+https://www.c64-wiki.com/
+
+
+Contact
+-------
+eyvindebsen@gmail.com
